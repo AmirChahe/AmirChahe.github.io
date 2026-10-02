@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://amirhoseinch.github.io/sitemap.xml
+Sitemap: https://amirchahe.github.io/sitemap.xml
