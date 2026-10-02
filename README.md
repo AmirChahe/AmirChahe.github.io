@@ -1,8 +1,8 @@
-# amirhoseinch.github.io
+# amirchahe.github.io
 
 Personal academic website of **Amirhosein Chahe**, Ph.D. student in Electrical Engineering at Drexel University.
 
-Live at <https://amirhoseinch.github.io>. Built with Jekyll from the [al-folio](https://github.com/alshedivat/al-folio) template (v1.2).
+Live at <https://amirchahe.github.io>. Built with Jekyll from the [al-folio](https://github.com/alshedivat/al-folio) template (v1.2).
 
 ## Updating the site
 

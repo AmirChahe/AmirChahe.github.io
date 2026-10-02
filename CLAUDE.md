@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This repo is Amirhosein Chahe's personal website (<https://amirhoseinch.github.io>), created from the al-folio v1.2 template. See [README.md](README.md) for where each piece of content lives.
+This repo is Amirhosein Chahe's personal website (<https://amirchahe.github.io>), created from the al-folio v1.2 template. See [README.md](README.md) for where each piece of content lives.
 
 Differences from the upstream template that override what `AGENTS.md` and `docs/` say:
 
