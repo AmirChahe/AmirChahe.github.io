@@ -1,0 +1,18 @@
+# Badge colors for the venue abbreviations (`abbr`) used in _bibliography/papers.bib
+"IROS":
+  color: "#2b5c8a"
+
+"RSS":
+  color: "#8a2b2b"
+
+"CVPRW":
+  color: "#1f6f5c"
+
+"WACVW":
+  color: "#5c4a8a"
+
+"ICRoM":
+  color: "#8a6a2b"
+
+"arXiv":
+  color: "#b31b1b"

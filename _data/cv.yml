@@ -1,0 +1,174 @@
+# Web version of the CV shown at /cv/ (RenderCV-style YAML, rendered by the al_folio_cv plugin).
+# The downloadable PDF is assets/pdf/Amirhosein_Chahe_CV.pdf; keep the two in sync.
+cv:
+  name: Amirhosein Chahe
+  label: Ph.D. Student in Electrical Engineering, Drexel University
+  email: ac4462@drexel.edu
+  website: https://amirhoseinch.github.io
+  summary: >
+    Ph.D. student advised by Prof. Lifeng Zhou, working on world models and model-based planning,
+    vision-language-action policies, and safe, efficient autonomy for driving and robot navigation.
+
+  social_networks:
+    - network: GitHub
+      username: AmirhoseinCh
+    - network: LinkedIn
+      username: amirhoseinchahe
+    - network: Google Scholar
+      username: MeK_1LUAAAAJ
+
+  address:
+    city: Philadelphia
+    region: PA
+    postalCode: "19104"
+
+  sections:
+    Research Interests:
+      - bullet: World models and model-based planning, vision-language-action (VLA) policies, closed-loop training and evaluation, safe and robust autonomy for driving and navigation, efficient embodied inference
+
+    Education:
+      - institution: Drexel University
+        location: Philadelphia, PA
+        studyType: Ph.D.
+        area: Electrical Engineering
+        start_date: "2023"
+        highlights:
+          - "Advisor: Prof. Lifeng Zhou"
+          - Expected graduation 2028
+
+      - institution: Drexel University
+        location: Philadelphia, PA
+        studyType: M.Sc.
+        area: Electrical Engineering
+        start_date: "2023"
+        end_date: "2025"
+        highlights:
+          - "GPA: 3.9"
+
+      - institution: University of Tehran
+        location: Tehran, Iran
+        studyType: B.Sc.
+        area: Mechanical Engineering
+        start_date: "2017"
+        end_date: "2021"
+        highlights:
+          - "GPA: 3.9"
+
+    Experience:
+      - company: Honda Research Institute USA, Inc.
+        position: Research Intern
+        start_date: "2026-06"
+        end_date: "2026-09"
+        highlights:
+          - Distilled a 10B driving model into a 4B one-step (NFE=1) vision-language policy for the NVIDIA AlpaSim Closed-Loop Challenge, with closed-loop safety evaluation
+
+      - company: Honda Research Institute USA, Inc.
+        position: Research Intern
+        start_date: "2025-06"
+        end_date: "2025-09"
+        highlights:
+          - Built a pipeline that uses Planning KL-divergence (PKL) to rank occluded agents on nuScenes by their impact on the ego plan, producing a new benchmark of planning-critical occlusions with structured VLM annotations (IROS 2026)
+          - Benchmarked 17 VLMs and fine-tuned 14; PKL-guided data selection improved accuracy by ~30% over random selection, and a fine-tuned 3B model outperformed a 24× larger zero-shot model
+
+      - company: Federal Aviation Administration ASSURE A71 Project
+        position: Researcher
+        start_date: "2024"
+        end_date: "2025"
+        highlights:
+          - Developed safety assessment algorithms and Monte Carlo simulations for uncertainty analysis in autonomous systems
+
+      - company: Drexel University
+        position: Research Assistant
+        location: Philadelphia, PA
+        start_date: "2023-04"
+        highlights:
+          - Developed latent world models with autoregressive rollout training and a Monotone Cost Ranking loss that shapes the planning cost for sampling-based MPC; state of the art on GNM image-goal navigation (2.7× lower orientation error than DINO-WM; beats NWM, OmniVLA, NoMaD)
+          - Deployed the world-model planner zero-shot on a Clearpath Husky with onboard NVIDIA Jetson AGX Orin inference, reaching the goal in 5/5 indoor/outdoor trials vs. 2/5 for OmniVLA
+          - Proposed PiJEPA, which warm-starts MPPI over a JEPA world model with a fine-tuned Octo VLA policy prior for language-conditioned navigation; best trajectory accuracy on CAST with DINOv2 and V-JEPA-2 encoders (CVPR Workshops 2026)
+          - Demonstrated the first real-world dynamic adversarial patch attack, displayed on a screen mounted on a moving vehicle, to manipulate an autonomous vehicle's decisions (RSS 2024)
+          - Built efficient, deployable language models for driving, including reasoning-enhanced small VLMs for driving VQA (CVPR Workshops 2025) and LLM-guided open-vocabulary 3D Gaussian scene querying (Best Paper, WACV Workshops 2025)
+
+    Publications:
+      - title: "What's Hidden Matters: Identifying Planning-Critical Occluded Agents using Vision-Language Models"
+        publisher: IROS 2026
+        releaseDate: "2026"
+        url: https://arxiv.org/abs/2607.00283
+        summary: "**A. Chahe**, T. Naes, J. D'sa, F. M. Tariq, S. Bae, L. Zhou, and D. Isele"
+
+      - title: Latent World Models with Monotone Planning Costs for Image-Goal Navigation
+        publisher: arXiv preprint
+        releaseDate: "2026"
+        url: https://arxiv.org/abs/2608.09073
+        summary: "**A. Chahe**, S. Cai, and L. Zhou"
+
+      - title: Policy-Guided World Model Planning for Language-Conditioned Visual Navigation
+        publisher: CVPR Workshops 2026
+        releaseDate: "2026"
+        url: https://arxiv.org/abs/2603.25981
+        summary: "**A. Chahe** and L. Zhou"
+
+      - title: "ReasonDrive: Efficient Visual Question Answering for Autonomous Vehicles with Reasoning-Enhanced Small Vision-Language Models"
+        publisher: CVPR Workshops 2025
+        releaseDate: "2025"
+        url: https://arxiv.org/abs/2504.10757
+        summary: "**A. Chahe** and L. Zhou"
+
+      - title: "Query3D: LLM-Powered Open-Vocabulary Scene Segmentation with Language Embedded 3D Gaussians"
+        publisher: WACV Workshops 2025 (Best Paper Award)
+        releaseDate: "2025"
+        url: https://arxiv.org/abs/2408.03516
+        summary: "**A. Chahe** and L. Zhou"
+
+      - title: Dynamic Adversarial Attacks on Autonomous Driving Systems
+        publisher: RSS 2024
+        releaseDate: "2024"
+        url: https://roboticsconference.org/2024/program/papers/76/
+        summary: "**A. Chahe**, C. Wang, A. Jeyapratap, K. Xu, and L. Zhou"
+
+      - title: Combining Deep Learning and Game Theory for Path Planning in Autonomous Racing Cars
+        publisher: ICRoM 2022
+        releaseDate: "2022"
+        url: https://ieeexplore.ieee.org/document/10025073
+        summary: "A. Ardekani, **A. Chahe**, and M. Hairi Yazdi"
+
+    Awards:
+      - title: Best Paper Award, LLVM-AD Workshop at WACV 2025
+        date: "2025"
+        summary: "Awarded for \"Query3D: LLM-Powered Open-Vocabulary Scene Segmentation\""
+
+      - title: Seaman Award
+        date: "2024-02"
+        awarder: College of Engineering, Drexel University
+        summary: Awarded for outstanding academic and research achievements
+
+      - title: Full Teaching Fellowship
+        date: "2024-02"
+        awarder: Drexel University
+
+      - title: Top Class Graduate
+        date: "2021-09"
+        awarder: University of Tehran
+        summary: Ranked among the top 15% of graduate students
+
+    Skills:
+      - name: Programming
+        keywords: [Python, C++, MATLAB]
+      - name: AI/ML Frameworks
+        keywords: [PyTorch, Hugging Face Transformers, DeepSpeed, LoRA fine-tuning (ms-swift), TensorFlow]
+      - name: Methods
+        keywords:
+          [
+            Latent (JEPA) World Models,
+            "Sampling-Based MPC (CEM, MPPI)",
+            Diffusion Policies,
+            Policy Distillation,
+            VLM Fine-Tuning,
+            3D Gaussian Splatting,
+            Adversarial Robustness,
+          ]
+      - name: GPU Computing
+        keywords: [Multi-GPU training on NVIDIA H100/H200 clusters (bf16 mixed precision), Onboard inference on NVIDIA Jetson AGX Orin]
+      - name: Robotics and Simulation
+        keywords: [ROS 2 (Nav2), Clearpath Husky, AlpaSim, CARLA, Gazebo, Simulink, Docker]
+      - name: Other
+        keywords: [Git, Linux, LaTeX]

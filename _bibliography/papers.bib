@@ -1,0 +1,105 @@
+---
+---
+
+@article{chahe2026latent,
+  abbr        = {arXiv},
+  bibtex_show = {true},
+  title       = {Latent World Models with Monotone Planning Costs for Image-Goal Navigation},
+  author      = {Chahe, Amirhosein and Cai, Siwei and Zhou, Lifeng},
+  journal     = {arXiv preprint arXiv:2608.09073},
+  year        = {2026},
+  arxiv       = {2608.09073},
+  pdf         = {https://arxiv.org/pdf/2608.09073},
+  preview     = {latent_world_models.png},
+  selected    = {true},
+  abstract    = {Image-goal navigation with latent world models requires not only accurate future prediction, but also a planning cost that reliably ranks candidate action sequences. We define the cost as the cosine distance between the predicted future embedding and the goal embedding, and show that poor cost ordering can mislead sampling-based planners such as Cross-Entropy Method (CEM). To address this, we propose a latent world model built on a frozen DINO-family encoder and train it with two complementary objectives. An autoregressive rollout loss reduces the gap between training and multi-step planning rollouts, while a Monotone Cost Ranking (MCR) loss directly encourages increasingly perturbed action sequences to receive higher planning costs. We also study InfoNCE-based action-contrastive training and find that temporal permutation negatives distort the latent geometry and degrade planning performance. On the GNM navigation dataset, our method outperforms Navigation World Models (NWM), DINO-WM, OmniVLA, and NoMaD, achieving state-of-the-art image-goal navigation performance while reducing orientation error by 2.7× over the same-encoder DINO-WM baseline. We also deploy the model zero-shot on a physical robot, where it follows goal-directed paths in unseen indoor and outdoor environments.}
+}
+
+@inproceedings{chahe2026whats,
+  abbr        = {IROS},
+  bibtex_show = {true},
+  title       = {What's Hidden Matters: Identifying Planning-Critical Occluded Agents using Vision-Language Models},
+  author      = {Chahe, Amirhosein and Naes, Tyler and D'sa, Jovin and Tariq, Faizan M. and Bae, Sangjae and Zhou, Lifeng and Isele, David},
+  booktitle   = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year        = {2026},
+  arxiv       = {2607.00283},
+  pdf         = {https://arxiv.org/pdf/2607.00283},
+  website     = {https://amirhoseinch.github.io/whats-hidden-matters/},
+  preview     = {whats_hidden_matters.jpg},
+  selected    = {true},
+  abstract    = {Autonomous vehicles must safely navigate complex environments where planning-critical agents may be hidden from view. Current approaches often treat all occlusions with uniform conservatism, yielding needlessly defensive driving, or they infer hidden spaces without estimating the impact on the planner. This work bridges the critical gap between perception and planning by enabling Vision-Language Models (VLMs) to identify and reason about the specific hidden agents that are most critical to the ego-vehicle's trajectory. We introduce a novel framework that uses Planning KL-divergence (PKL), an information-theoretic metric, to systematically identify and rank occluded agents based on their impact on the ego vehicle's plan. Using this planning-aware ranking, we employ an expert VLM (GPT-5) to generate rich, structured annotations that capture the visual evidence and reasoning required for this task. We apply this framework to the nuScenes dataset to create a new benchmark focused on high-impact scenarios. We conduct comprehensive experiments on a wide range of general-purpose and domain-adapted VLMs, demonstrating that fine-tuning on our PKL-guided data yields dramatic performance improvements across all models. Notably, our results show that smaller, fine-tuned models significantly outperform their much larger zero-shot counterparts, and that our PKL-guided data selection strategy improves performance by approximately 30\% over random sampling. Our work presents the first systematic approach for training VLMs to focus on planning-critical occlusions, enabling more semantically grounded and efficient risk assessment in autonomous driving.}
+}
+
+@inproceedings{chahe2026policy,
+  abbr        = {CVPRW},
+  bibtex_show = {true},
+  title       = {Policy-Guided World Model Planning for Language-Conditioned Visual Navigation},
+  author      = {Chahe, Amirhosein and Zhou, Lifeng},
+  booktitle   = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  year        = {2026},
+  arxiv       = {2603.25981},
+  html        = {https://openaccess.thecvf.com/content/CVPR2026W/WDFM-EAI/html/Chahe_Policy-Guided_World_Model_Planning_for_Language-Conditioned_Visual_Navigation_CVPRW_2026_paper.html},
+  pdf         = {https://arxiv.org/pdf/2603.25981},
+  code        = {https://github.com/AmirhoseinCh/PiJEPA},
+  preview     = {pijepa.png},
+  selected    = {true},
+  abstract    = {Navigating to a visually specified goal given natural language instructions remains a fundamental challenge in embodied AI. Existing approaches either rely on reactive policies that struggle with long-horizon planning, or employ world models that suffer from poor action initialization in high-dimensional spaces. We present PiJEPA, a two-stage framework that combines the strengths of learned navigation policies with latent world model planning for instruction-conditioned visual navigation. In the first stage, we finetune an Octo-based generalist policy, augmented with a frozen pretrained vision encoder (DINOv2 or V-JEPA-2), on the CAST navigation dataset to produce an informed action distribution conditioned on the current observation and language instruction. In the second stage, we use this policy-derived distribution to warm-start Model Predictive Path Integral (MPPI) planning over a separately trained JEPA world model, which predicts future latent states in the embedding space of the same frozen encoder. By initializing the MPPI sampling distribution from the policy prior rather than from an uninformed Gaussian, our planner converges faster to high-quality action sequences that reach the goal. We systematically study the effect of the vision encoder backbone, comparing DINOv2 and V-JEPA-2, across both the policy and world model components. Experiments on real-world navigation tasks demonstrate that PiJEPA significantly outperforms both standalone policy execution and uninformed world model planning, achieving improved goal-reaching accuracy and instruction-following fidelity.}
+}
+
+@inproceedings{chahe2025reasondrive,
+  abbr        = {CVPRW},
+  bibtex_show = {true},
+  title       = {ReasonDrive: Efficient Visual Question Answering for Autonomous Vehicles with Reasoning-Enhanced Small Vision-Language Models},
+  author      = {Chahe, Amirhosein and Zhou, Lifeng},
+  booktitle   = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  year        = {2025},
+  arxiv       = {2504.10757},
+  pdf         = {https://arxiv.org/pdf/2504.10757},
+  code        = {https://github.com/Zhourobotics/ReasonDrive},
+  preview     = {reasondrive.jpg},
+  abstract    = {Vision-language models (VLMs) show promise for autonomous driving but often lack transparent reasoning capabilities that are critical for safety. We investigate whether explicitly modeling reasoning during fine-tuning enhances VLM performance on driving decision tasks. Using GPT-4o, we generate structured reasoning chains for driving scenarios from the DriveLM benchmark with category-specific prompting strategies. We compare reasoning-based fine-tuning, answer-only fine-tuning, and baseline instruction-tuned models across multiple small VLM families (Llama 3.2, Llava 1.5, and Qwen 2.5VL). Our results demonstrate that reasoning-based fine-tuning consistently outperforms alternatives, with Llama3.2-11B-reason achieving the highest performance. Models fine-tuned with reasoning show substantial improvements in accuracy and text generation quality, suggesting explicit reasoning enhances internal representations for driving decisions. These findings highlight the importance of transparent decision processes in safety-critical domains and offer a promising direction for developing more interpretable autonomous driving systems.}
+}
+
+@inproceedings{chahe2025query3d,
+  abbr        = {WACVW},
+  bibtex_show = {true},
+  title       = {Query3D: LLM-Powered Open-Vocabulary Scene Segmentation with Language Embedded 3D Gaussians},
+  author      = {Chahe, Amirhosein and Zhou, Lifeng},
+  booktitle   = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision Workshops (WACVW)},
+  year        = {2025},
+  arxiv       = {2408.03516},
+  pdf         = {https://arxiv.org/pdf/2408.03516},
+  code        = {https://github.com/Zhourobotics/Query-3DGS-LLM},
+  preview     = {query3d.jpg},
+  award       = {**Best Paper Award** at the LLVM-AD Workshop, WACV 2025.},
+  award_name  = {Best Paper Award},
+  selected    = {true},
+  abstract    = {This paper introduces a novel method for open-vocabulary 3D scene querying in autonomous driving by combining Language Embedded 3D Gaussians with Large Language Models (LLMs). We propose utilizing LLMs to generate both contextually canonical phrases and helping positive words for enhanced segmentation and scene interpretation. Our method leverages GPT-3.5 Turbo as an expert model to create a high-quality text dataset, which we then use to fine-tune smaller, more efficient LLMs for on-device deployment. Our comprehensive evaluation on the WayveScenes101 dataset demonstrates that LLM-guided segmentation significantly outperforms traditional approaches based on predefined canonical phrases. Notably, our fine-tuned smaller models achieve performance comparable to larger expert models while maintaining faster inference times. Through ablation studies, we discover that the effectiveness of helping positive words correlates with model scale, with larger models better equipped to leverage additional semantic information. This work represents a significant advancement towards more efficient, context-aware autonomous driving systems, effectively bridging 3D scene representation with high-level semantic querying while maintaining practical deployment considerations.}
+}
+
+@inproceedings{chahe2024dynamic,
+  abbr        = {RSS},
+  bibtex_show = {true},
+  title       = {Dynamic Adversarial Attacks on Autonomous Driving Systems},
+  author      = {Chahe, Amirhosein and Wang, Chenan and Jeyapratap, Abhishek and Xu, Kaidi and Zhou, Lifeng},
+  booktitle   = {Robotics: Science and Systems (RSS)},
+  year        = {2024},
+  arxiv       = {2312.06701},
+  html        = {https://roboticsconference.org/2024/program/papers/76/},
+  pdf         = {https://arxiv.org/pdf/2312.06701},
+  code        = {https://github.com/AmirhoseinCh/DynamicPatch},
+  video       = {https://www.youtube.com/watch?v=Wh2sPYpWczQ},
+  preview     = {dynamic_adversarial.jpg},
+  selected    = {true},
+  abstract    = {This paper introduces an attacking mechanism to challenge the resilience of autonomous driving systems. Specifically, we manipulate the decision-making processes of an autonomous vehicle by dynamically displaying adversarial patches on a screen mounted on another moving vehicle. These patches are optimized to deceive the object detection models into misclassifying targeted objects, e.g., traffic signs. Such manipulation has significant implications for critical multi-vehicle interactions such as intersection crossing, which are vital for safe and efficient autonomous driving systems. Particularly, we make four major contributions. First, we introduce a novel adversarial attack approach where the patch is not co-located with its target, enabling more versatile and stealthy attacks. Moreover, our method utilizes dynamic patches displayed on a screen, allowing for adaptive changes and movements, enhancing the flexibility and performance of the attack. To do so, we design a Screen Image Transformation Network (SIT-Net), which simulates environmental effects on the displayed images, narrowing the gap between simulated and real-world scenarios. Further, we integrate a positional loss term into the adversarial training process to increase the success rate of the dynamic attack. Finally, we shift the focus from merely attacking perceptual systems to influencing the decision-making algorithms of self-driving systems. Our experiments demonstrate the first successful implementation of such dynamic adversarial attacks in real-world autonomous driving scenarios, paving the way for advancements in the field of robust and secure autonomous driving.}
+}
+
+@inproceedings{ardekani2022combining,
+  abbr        = {ICRoM},
+  bibtex_show = {true},
+  title       = {Combining Deep Learning and Game Theory for Path Planning in Autonomous Racing Cars},
+  author      = {Ardekani, A. and Chahe, A. and Hairi Yazdi, M.},
+  booktitle   = {RSI International Conference on Robotics and Mechatronics (ICRoM)},
+  year        = {2022},
+  html        = {https://ieeexplore.ieee.org/document/10025073}
+}

@@ -1,0 +1,5 @@
+# Map a co-author's last name (lowercase) to their homepage so their name is linked
+# on the publications page.
+"zhou":
+  - firstname: ["Lifeng", "L."]
+    url: https://zhourobotics.github.io/
